@@ -280,7 +280,15 @@ html {
   /* <600 px */
    @media only screen and (max-width: 600px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
+    }
+
+    .section {
+      padding: 2.35rem;
+    }
+    
+    .section-header {
+      top: 55px;
     }
 
     .nav {
@@ -299,6 +307,46 @@ html {
     #welcome-hi {
         text-align: center;
     }
+
+    #circular-portrait {
+      width: 100px;
+      height: 100px;
+    }
+
+    #about-section p {
+      text-align: justify;
+    }
+
+    .resume-item {
+      display: block;
+    }
+
+    .resume-item-content {
+      margin-left: 0;
+    }
+
+    .resume-sidebar {
+      margin-bottom: 20px;
+    }
+
+    .resume-item-content-title {
+      text-align: center;
+    }
+
+    .resume-item-content-subheading-date {
+      display:block;
+      text-align: center;
+      margin-right: 0px;
+    }
+
+    .resume-item-content-description {
+      text-align: justify;
+    }
+
+    #contact-section {
+      height: 300px;
+    }
+
   }
 
   /* >=601px */
