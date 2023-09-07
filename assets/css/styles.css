@@ -291,6 +291,10 @@ html {
       top: 55px;
     }
 
+    #resume-section .section-header, #about-section .section-header {
+      display: none;
+    }
+
     .nav {
         justify-content: center;
     }
