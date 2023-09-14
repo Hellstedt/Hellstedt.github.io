@@ -2,9 +2,7 @@
 :root {
     --main-navy: #0e2431;
     --main-white: #fff;
-    --main-color3: orange;
     --main-blue: #4070f4;
-    --main-blue2: #00a0cc;
 }
 
 
@@ -93,6 +91,7 @@ html {
 
 
   /*=== NAV-BAR ===*/
+
   .nav {
     display: flex;
     justify-content: flex-end;
@@ -183,7 +182,6 @@ html {
     height: 200px;
     overflow: hidden;
     border-radius: 50%;
-    /* border: 3px solid var(--main-white); */
   }
 
   #circular-portrait img {
@@ -273,12 +271,27 @@ html {
   }
 
 
-
-
   /* === MEDIA ===*/
 
-  /* <600 px */
-   @media only screen and (max-width: 600px) {
+  @media  only screen and (max-width: 1280px) {
+    html {
+      font-size: 54%;
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 52%;
+    }
+
+    .resume-item-content-subheading-date {
+      display:block;
+      text-align: left;
+      margin-right: 0;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
     html {
         font-size: 40%;
     }
@@ -350,30 +363,4 @@ html {
     #contact-section {
       height: 300px;
     }
-
-  }
-
-  /* >=601px */
-  @media only screen and (min-width: 601px) {
-    html {
-    }
-  }
-
-  /* >=768px */
-@media only screen and (min-width: 768px) {
-    html {
-    }
-
-    .nav {
-        justify-content: flex-end;
-    }
-  }
-
-  @media only screen and (min-width: 992px) {
-    html {
-    }
-  }
-
-  @media  only screen and (min-width: 1200px) {
-    
   }
