@@ -5,13 +5,13 @@
         <meta name="author" content="Joakim Hellstedt">
         <meta name="keywords" content="Portfolio, ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="assets/css/styles.css">
         <title>Joakim in Brief</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="assets/css/styles.css">
     </head>
     <body>
         <!--START NAV-->
@@ -28,6 +28,9 @@
                         <a href="#resume-section" class="nav_link">Resume</a>
                     </li>
                     <li>
+                        <a href="#portfolio-section" class="nav_link">Projects</a>
+                    </li>
+                    <li>
                         <a href="#contact-section" class="nav_link">Contact</a>
                     </li>
                 </ul>
@@ -38,7 +41,7 @@
         <section id="welcome-section">
             <div class="welcome-div">
                 <h1><span id="welcome-hi">Hi,</span> I am <span id="firstname">Joakim</span></h1>
-                <p>a developer</p>
+                <p>a software developer</p>
             </div>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/joakim-hellstedt/" target="_blank"><i class='bx bxl-linkedin'></i></a>
@@ -104,9 +107,27 @@
             </div>
         </section>
         <!--END PROJECT SECTION-->
+        <!-- PORTFOLIO/PROJECT SECTION -->
+        <section id="portfolio-section" class="section">
+            <h2 class="section-header underline-white">Projects</h2>
+            <div class="portfolio-container">
+                <div class="card">
+                    <div class="card-carousel">
+                        <img class="carousel-item" src="images/CookbookApp-dashboard.png">
+                        <img class="carousel-item" src="images/CookbookApp-recipe.png">
+                        <img class="carousel-item" src="images/CookbookApp-addForm.png">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="blue left head-margin">DishDrop</h3>
+                        <p class="blue left">DishDrop is a full-stack web application for storing food recipes, built using Angular, C# and SQL Server. Users can create, view, update, and delete their recipes, as well as add them to favorites. DishDrop is a personal side project that is currently in development, and future iterations aim to introduce more features to further expand its capabilities.</p>
+                        <a href="https://github.com/Hellstedt/RecipeApplication" class="btn"><i class='bx bxl-github'></i>Github</a>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--START CONTACT SECTION-->
         <section id="contact-section" class="section contact-section">
-            <h2 class="section-header underline-white">Contact</h2>
+            <h2 class="section-header underline-blue">Contact</h2>
             <div>
                 <p>
                     Feel free to hit me up on Linkedin or send an email:
@@ -116,5 +137,6 @@
                 <a href="mailto: joakim.v.hellstedt@gmail.com" target="_blank"><i class='bx bxs-envelope'></i></a>
             </div>
         </section>
+        <script src="main.js"></script>
     </body>
 </html>
