@@ -108,6 +108,18 @@ html {
     margin-bottom: 1rem;
   }
 
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0px) scale(1);
+    }
+  }
+
   /*=== NAV-BAR ===*/
 
   .nav {
@@ -164,6 +176,7 @@ html {
     width: 100%;
     height: 100vh;
     background-color: var(--main-white);
+    animation: fade-up 1s;
   }
 
   #welcome-section  p {
@@ -230,6 +243,10 @@ html {
     display: flex;
     max-width: 1000px;
     margin: 0 auto 40px;
+  }
+
+  .experience-item {
+    margin-bottom: 20px;
   }
 
   .resume-sidebar {
